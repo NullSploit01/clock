@@ -10,17 +10,30 @@ html, body {
     text-decoration: none;
 }
 
-.navbar {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 nav.navbar > .link{
     padding: 0 5rem;
 }
 
 nav.navbar > .link:hover{
     color: #A5C9CA;
+}
+
+div.clock, .navbar, div.date {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+div.clock {
+    font-size: 15rem;
+}
+
+div.date {
+    font-size: 5rem;
 }
