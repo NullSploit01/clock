@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #100F0F;
+    color: #E8F9FD;
+}
+
+.link {
+    color: #E8F9FD;
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.navbar > .link{
+    padding: 0 5rem;
+}
+
+nav.navbar > .link:hover{
+    color: #A5C9CA;
+}

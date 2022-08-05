@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Clock from "./Clock";
-const App = () => {
+const Timer = () => {
   return (
     <>
       <Navbar />
-      <Clock />
+      Timer
     </>
   );
 };
 
-export default App;
+export default Timer;
