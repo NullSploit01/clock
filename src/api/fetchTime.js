@@ -1,4 +1,4 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "http://worldtimeapi.org/api/ip",
+  baseURL: "https://worldtimeapi.org/api/ip",
 });
