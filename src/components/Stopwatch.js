@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Clock from "./Clock";
-const App = () => {
+const Stopwatch = () => {
   return (
     <>
       <Navbar />
-      <Clock />
+      Stopwatch
     </>
   );
 };
 
-export default App;
+export default Stopwatch;
