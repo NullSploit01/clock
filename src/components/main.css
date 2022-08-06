@@ -25,7 +25,7 @@ div.clock, .navbar, div.date, footer {
     justify-content: center;
 }
 
-div.arrows, div.timer, div.values, div.stop {
+div.arrows, div.timer, div.values, div.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +39,10 @@ div.arrows > .hour > .down:hover, .minute > .down:hover, .second > .down:hover {
     color: red
 }
 
+div.buttons .button {
+    margin: 0, 2rem;
+}
+
 div.arrows > .hour > .up:hover, .minute > .up:hover, .second > .up:hover {
     color: green
 }
@@ -47,7 +51,7 @@ div.timer {
     margin-top: 5rem;
 }
 
-div.stop {
+div.buttons {
     margin: 3rem 0;
 }
 
