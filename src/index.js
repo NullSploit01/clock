@@ -10,6 +10,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/clock" element={<App />}></Route>
+      <Route path="/clock/time" element={<App />}></Route>
       <Route path="/clock/timer" element={<Timer />}></Route>
       <Route path="/clock/stopwatch" element={<Stopwatch />}></Route>
     </Routes>

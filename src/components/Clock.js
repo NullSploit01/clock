@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
 import fetchTime from "../api/fetchTime";
-const DAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
 
 const ONEHOUR = 60 * 60 * 1000;
+const DATE_OPTIONS = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 
 const Clock = () => {
   const [date, setDate] = useState("");
-  const [dayOfWeek, setDayOfWeek] = useState("");
   const [time, setTime] = useState("");
   const [datetimeobj, setDatetime] = useState("");
   useEffect(() => {
@@ -22,8 +18,7 @@ const Clock = () => {
       const response = await fetchTime();
       const { datetime } = response.data;
       const d = new Date(datetime);
-      setDate(d.toLocaleDateString());
-      setDayOfWeek(DAYS[d.getDay()]);
+      setDate(d.toLocaleDateString("en-US", DATE_OPTIONS));
       setTime(d.toLocaleTimeString("en-US", { hour12: false }));
       setDatetime(datetime);
     };
@@ -47,9 +42,7 @@ const Clock = () => {
   return (
     <>
       <div className="clock">{time}</div>
-      <div className="date">
-        {dayOfWeek} {date}
-      </div>
+      <div className="date">{date}</div>
     </>
   );
 };

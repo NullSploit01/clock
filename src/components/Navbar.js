@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link
           className="link"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          to="/clock"
+          to="/clock/time"
         >
           CLOCK
         </Link>
