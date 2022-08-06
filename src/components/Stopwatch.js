@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import PinnedList from "./List";
 const pad = (num, size) => {
   num = (parseInt(num) + 1).toString();
@@ -40,6 +41,7 @@ const Stopwatch = () => {
     updateHour("00");
     updateMinute("00");
     updateSecond("00");
+    updateFlags([]);
     setRunning(false);
   };
 
@@ -89,6 +91,7 @@ const Stopwatch = () => {
           <PinnedList flags={flags.slice(0).reverse()} />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
