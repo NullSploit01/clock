@@ -4,7 +4,7 @@ Just a simple clock application
 
 ---
 
-## Website: https://nullsploit01.github.io/clock/
+### Checkout working [Website](https://nullsploit01.github.io/clock/)
 
 ## Requirements
 
