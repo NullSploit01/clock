@@ -10,21 +10,21 @@ const Navbar = () => {
         <Link
           className="link"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          to="/timer"
+          to="/clock/timer"
         >
           TIMER
         </Link>
         <Link
           className="link"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          to="/"
+          to="/clock"
         >
           CLOCK
         </Link>
         <Link
           className="link"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          to="/stopwatch"
+          to="/clock/stopwatch"
         >
           STOPWATCH
         </Link>

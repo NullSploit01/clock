@@ -9,9 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById("app"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}></Route>
-      <Route path="/timer" element={<Timer />}></Route>
-      <Route path="/stopwatch" element={<Stopwatch />}></Route>
+      <Route path="/clock" element={<App />}></Route>
+      <Route path="/clock/timer" element={<Timer />}></Route>
+      <Route path="/clock/stopwatch" element={<Stopwatch />}></Route>
     </Routes>
   </BrowserRouter>
 );
